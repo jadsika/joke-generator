@@ -1,36 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Merriweather&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="src/styles.css" />
     <title>Document</title>
-</head>
-<body>
-    <header>
+  </head>
+  <body>
+    <div class="container">
+      <header>
         <h1>Poem Generator</h1>
-    </header>
-    <main>
+      </header>
+      <main>
         <form>
-            <input type="text" id="poemInput" placeholder="Enter the topic for the poem" required autofocus autocomplete="off">
-            <input type="submit" id="poemSubmit">
+          <input
+            type="text"
+            id="poemInput"
+            placeholder="Enter the topic for the poem"
+            required
+            autofocus
+            autocomplete="off"
+            class="inputField"
+          />
+          <input type="submit" id="poemSubmit" class="submitbutton"/>
         </form>
         <div id="poemOutput">
-            <h2>Your Poem</h2>
-            <p id="poemText">
-                Nature's first green is gold,<br>
-                Her hardest hue to hold.<br>
-                Her early leaf's a flower;<br>
-                But only so an hour.
-            </p>
-            
-
+          <h2>Your Poem</h2>
+          <p id="poemText">
+            Nature's first green is gold,<br />
+            Her hardest hue to hold.<br />
+            Her early leaf's a flower;<br />
+            But only so an hour.
+          </p>
         </div>
-    <footer>This page was coded by Jad Gogovi and it is opensourecd on Github and hosted on 
-        <a href="https://sweetpoemgenerator.netlify.app/">
-            netlify
-        </a>
-    </footer>
+      </main>
+      <footer>
+        This page was coded by Jad Gogovi and it is opensourced on Github and
+        hosted on
+        <a href="https://sweetpoemgenerator.netlify.app/">netlify</a>
+      </footer>
+    </div>
     <script src="src/script.js"></script>
-</body>
+  </body>
 </html>
