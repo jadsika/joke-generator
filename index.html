@@ -7,9 +7,30 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>PoemGenerator</h1>
-    <p>hello world</p>
-    <footer>This page was coded by Jad Gogovi</footer>
+    <header>
+        <h1>Poem Generator</h1>
+    </header>
+    <main>
+        <form>
+            <input type="text" id="poemInput" placeholder="Enter the topic for the poem" required autofocus autocomplete="off">
+            <input type="submit" id="poemSubmit">
+        </form>
+        <div id="poemOutput">
+            <h2>Your Poem</h2>
+            <p id="poemText">
+                Nature's first green is gold,<br>
+                Her hardest hue to hold.<br>
+                Her early leaf's a flower;<br>
+                But only so an hour.
+            </p>
+            
+
+        </div>
+    <footer>This page was coded by Jad Gogovi and it is opensourecd on Github and hosted on 
+        <a href="https://sweetpoemgenerator.netlify.app/">
+            netlify
+        </a>
+    </footer>
     <script src="src/script.js"></script>
 </body>
 </html>
