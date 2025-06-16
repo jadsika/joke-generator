@@ -6,47 +6,63 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Merriweather&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Merriweather:wght@400;700&family=Crimson+Text:wght@400;600&display=swap"
       rel="stylesheet"
     />
-
     <link rel="stylesheet" href="src/styles.css" />
-    <title>Document</title>
+    <title>Poem Generator</title>
   </head>
   <body>
     <div class="container">
+      <div class="decoration feather">✒</div>
+      <div class="decoration ink-blot">✑</div>
+
       <header>
         <h1>Poem Generator</h1>
       </header>
+
       <main>
-        <form>
-          <input
-            type="text"
-            id="poemInput"
-            placeholder="Enter the topic for the poem"
-            required
-            autofocus
-            autocomplete="off"
-            class="inputField"
-          />
-          <input type="submit" id="poemSubmit" class="submitbutton"/>
-        </form>
-        <div id="poemOutput">
-          <h2>Your Poem</h2>
-          <p id="poemText">
-            Nature's first green is gold,<br />
-            Her hardest hue to hold.<br />
-            Her early leaf's a flower;<br />
-            But only so an hour.
-          </p>
+        <div class="poem-form">
+          <form>
+            <input
+              type="text"
+              id="poemInput"
+              placeholder="Enter the topic for your poem..."
+              required
+              autofocus
+              autocomplete="off"
+              class="inputField"
+            />
+            <input
+              type="submit"
+              value="Compose"
+              id="poemSubmit"
+              class="submitbutton"
+            />
+          </form>
+        </div>
+
+        <div class="poem-container">
+          <div id="poemOutput" class="poem">
+            <h2>Your Poem</h2>
+            <p id="poemText">
+              Nature's first green is gold,<br />
+              Her hardest hue to hold.<br />
+              Her early leaf's a flower;<br />
+              But only so an hour.
+            </p>
+          </div>
         </div>
       </main>
+
       <footer>
         This page was coded by Jad Gogovi and it is opensourced on Github and
         hosted on
         <a href="https://sweetpoemgenerator.netlify.app/">netlify</a>
       </footer>
     </div>
+
     <script src="src/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </body>
 </html>
